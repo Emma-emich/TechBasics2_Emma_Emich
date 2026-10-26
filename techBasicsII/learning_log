@@ -1,1 +1,60 @@
+TechBasics II 
+
+Week 1
+13.10.2026
+Introduction:
+Introduction to Arduino:
+def.: an open-source electronic prototyping platform based on easy-to-use hardware and software 
+Microcontroller: 
+low-cost, single chip, self-contained computer system
+invisible computers embedded inside drones, 3D printers, toys and wash machines 
+Raspberry Pi is closer to a real computer than a microcontroller, with more processing power and more memory 
+
+Working with Arduino 
+Arduino software:
+uses c++ where the code is compiled directly into machine language            → faster, hardware specific 
+IDE Definition:
+An IDE stands for Integrated Development Environment. It is a software application that combines all the essential tools a programmer needs to write,build, test and debug code into a single graphical interface
+pinMode(pin, mode) → pin is an integer - smallest one 
+has two modes: input/ output (UPPERCASE) 
+digitalWrite(pin, value) → expects two parameters (HIGH or LOW - 1 or 0)
+LED → Light Emitting Diode → no polarity → long leg, uncurved side = Anode +; short leg, curved side = Kathode -
+Wires: Jumper Wires
+types: M/M, M/F, F/F 
+good habit: red wire for +, black wire for - 
+
+
+Week 2
+20.10.2026
+
+LED → Light Emitting Diode → Anode + long leg, Kathode - short leg 
+THT = Through Hole Technology
+SMD = Surface Mount Device 
+Resistor colour code: used to represent value 
+different types of resistors with 4 band-code 
+Breadboard: all power rails are connected top to bottom on the left and right side, and in the main field the strips are connected horizontally 
+Arduino, a battery or power module can be used to power the breadboard 
+GND 
+the circuit’s common ground, acting as a zero-volt reference and a return path for current 
+in a direct current (DC) circuit, the negative (-) terminal id often designed as the “ground” 
+
+
+
+Ohm’s Law 
+
+
+usage of a 220 resistor for an LED —> for current limiting 
+<15 mA: safe current for common LED’s 
+a 330 would also work, the light will be dimmer 
+direct current (laptop, smartphone) more practical in long distance power transmission but less safe and harder to change voltage vs alternating current (big household machines, washing machine) 
+common voltages 
+for microcontrollers: 5v, 3.3v 
+9v
+12v
+
+use a series circuit when you need components to divide voltage/ sharing current. Ex: resistor + LED 
+use a parallel circuit when you need every device to receive the full source voltage and want components to run independently so that a single failure or broken bulb does not shut down the entire system. ex: multiple LEDs 
+
+Exercise 1: we did a single circuit , and in Exercise 2 a parallel circuit 
+RGB LED: four legs with either longest leg common Anode or common Kathode 
 
